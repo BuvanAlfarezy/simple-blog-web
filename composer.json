@@ -1,0 +1,16 @@
+{
+    "name": "advan/blog-web",
+    "description": "Composer Simpel Web",
+    "autoload": {
+        "psr-4": {
+            "Advan\\BlogWeb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Buvan Alfarezy",
+            "email": "buvanalfarezy2305@gmail.com"
+        }
+    ],
+    "require": {}
+}
