@@ -3,7 +3,12 @@
     "description": "Composer Simpel Web",
     "autoload": {
         "psr-4": {
-            "Advan\\BlogWeb\\": "src/"
+            "Advan\\BlogWeb\\": "app"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Advan\\BlogWeb\\": "test"
         }
     },
     "authors": [
@@ -12,5 +17,10 @@
             "email": "buvanalfarezy2305@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.8"
+    }
 }
