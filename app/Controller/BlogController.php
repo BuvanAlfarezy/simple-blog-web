@@ -1,6 +1,6 @@
 <?php
 
-require_once '../app/Models/Post.php';
+require_once '../app/Model/Post.php';
 
 class BlogController extends Controller {
 
