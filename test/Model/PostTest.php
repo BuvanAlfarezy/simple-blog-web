@@ -2,7 +2,7 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once __DIR__ . '/../../app/Models/Post.php';
+require_once __DIR__ . '/../../app/Model/Post.php';
 require_once __DIR__ . '/../../app/Config/Database.php';
 require_once __DIR__ . '/../../config/database.php';
 
