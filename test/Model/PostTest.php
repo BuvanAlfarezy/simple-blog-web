@@ -1,6 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use Advan\BlogWeb\Model\Post;
 
 require_once __DIR__ . '/../../app/Model/Post.php';
 require_once __DIR__ . '/../../app/Config/database.php';
