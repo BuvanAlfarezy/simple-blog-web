@@ -1,6 +1,6 @@
 <?php 
 
-namespace app\Config;
+namespace Advan\BlogWeb\Config;
 
 class Database
 {
