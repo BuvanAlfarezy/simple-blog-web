@@ -1,6 +1,7 @@
 <?php
 
 namespace Advan\BlogWeb\Model;
+use Advan\BlogWeb\Config;
 
 class Post {
 
