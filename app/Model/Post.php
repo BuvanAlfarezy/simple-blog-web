@@ -1,6 +1,6 @@
 <?php
 
-use App\Config\Database;
+namespace Advan\BlogWeb\Config;
 
 class Post {
 
