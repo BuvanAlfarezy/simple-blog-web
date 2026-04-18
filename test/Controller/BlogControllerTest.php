@@ -2,9 +2,9 @@
 
 use PHPUnit\Framework\TestCase;
 use Advan\BlogWeb\Model\Post;
+use Advan\BlogWeb\Controller\BlogController;
 
 require_once __DIR__ . '/../../vendor/autoload.php';
-require_once __DIR__ . '/../../app/Controller/BlogController.php';
 
 class BlogControllerTest extends TestCase
 {
