@@ -1,6 +1,7 @@
 <?php
 
 use Advan\BlogWeb\Model;
+use Advan\BlogWeb\Config\Database;
 
 class BlogController extends Controller {
 
