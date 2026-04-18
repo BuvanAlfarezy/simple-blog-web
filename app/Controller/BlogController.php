@@ -1,4 +1,5 @@
 <?php
+namespace Advan\BlogWeb\Controller;
 
 use Advan\BlogWeb\Model;
 use Advan\BlogWeb\Config\Database;
