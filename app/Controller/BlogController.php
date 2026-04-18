@@ -1,7 +1,7 @@
 <?php
 namespace Advan\BlogWeb\Controller;
 
-use Advan\BlogWeb\Model;
+use Advan\BlogWeb\Model\Post;
 use Advan\BlogWeb\Config\Database;
 
 class BlogController {
