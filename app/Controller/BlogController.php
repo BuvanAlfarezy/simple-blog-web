@@ -1,6 +1,6 @@
 <?php
 
-use Advan\BlogWeb\Model\Post;
+use Advan\BlogWeb\Model;
 
 class BlogController extends Controller {
 
