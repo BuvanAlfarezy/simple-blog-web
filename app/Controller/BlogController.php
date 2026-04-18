@@ -11,9 +11,10 @@ class BlogController {
         $postModel = new Post();
         $posts = $postModel->getAll();
 
-        $this->view('blog/index', [
-            'posts' => $posts
-        ]);
+        // $this->view('blog/index', [
+        //     'posts' => $posts
+        // ]);
+        return $posts; 
     }
 
     public function show()
@@ -28,8 +29,9 @@ class BlogController {
         $postModel = new Post();
         $post = $postModel->getById($id);
 
-        $this->view('blog/show', [
-            'post' => $post
-        ]);
+        // $this->view('blog/show', [
+        //     'post' => $post
+        // ]);
+        return $post; 
     }
 }
