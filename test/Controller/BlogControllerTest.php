@@ -34,7 +34,7 @@ class BlogControllerTest extends TestCase
 
         $mockPost->method('getById')
                  ->willReturn([
-                     'title' => 'Detail Test'
+                     'title' => 'Test'
                  ]);
 
         $controller = new BlogController($mockPost);
@@ -42,6 +42,6 @@ class BlogControllerTest extends TestCase
         $result = $controller->show();
 
         $this->assertIsArray($result);
-        $this->assertEquals('Detail Test', $result['title']);
+        $this->assertEquals('Test', $result['title']);
     }
 }
