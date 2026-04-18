@@ -1,6 +1,6 @@
 <?php
 
-require_once '../app/Models/Post.php';
+use Advan\BlogWeb\Models\Post;
 
 class BlogController extends Controller {
 
