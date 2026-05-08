@@ -3,12 +3,12 @@
     "description": "Composer Simpel Web",
     "autoload": {
         "psr-4": {
-            "Advan\\BlogWeb\\": "app"
+            "Advan\\BlogWeb\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Advan\\BlogWeb\\": "test"
+            "Advan\\BlogWeb\\": "test/"
         }
     },
     "authors": [

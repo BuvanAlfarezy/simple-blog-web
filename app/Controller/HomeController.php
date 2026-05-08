@@ -4,7 +4,7 @@ namespace Advan\BlogWeb\Controller;
 
 require_once "../core/Controller.php";
 
-class HomeController extends Controller
+class HomeController extends \Controller
 {
     public function index()
     {
