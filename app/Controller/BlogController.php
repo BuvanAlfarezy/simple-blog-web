@@ -3,17 +3,18 @@ namespace Advan\BlogWeb\Controller;
 
 use Advan\BlogWeb\Model\Post;
 use Advan\BlogWeb\Config\Database;
+use Advan\BlogWeb\Core\Controller;
 
-class BlogController {
-
+class BlogController extends Controller
+{
     public function index()
     {
         $postModel = new Post();
         $posts = $postModel->getAll();
 
-        // $this->view('blog/index', [
-        //     'posts' => $posts
-        // ]);
+        $this->view('Blog/index', [
+            'posts' => $posts
+        ]);
         return $posts; 
     }
 
@@ -29,9 +30,9 @@ class BlogController {
         $postModel = new Post();
         $post = $postModel->getById($id);
 
-        // $this->view('blog/show', [
-        //     'post' => $post
-        // ]);
+        $this->view('Blog/show', [
+            'post' => $post
+        ]);
         return $post; 
     }
 }

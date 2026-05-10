@@ -2,9 +2,11 @@
 
 namespace Advan\BlogWeb\Controller;
 
-require_once "../core/Controller.php";
+// require_once "../core/Controller.php";
 
-class HomeController extends \Controller
+use Advan\BlogWeb\Core\Controller;
+
+class HomeController extends Controller
 {
     public function index()
     {
