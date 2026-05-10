@@ -1,4 +1,5 @@
-Simple Website Blog Responsive
+Simple Website Blog Responsive For Mobile/Website
+
 Halaman Home
 <img width="1883" height="880" alt="Screenshot 2026-05-10 140551" src="https://github.com/user-attachments/assets/06599604-6836-435d-b99b-5d01617f3dd7" />
 
