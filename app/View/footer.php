@@ -36,13 +36,6 @@
                         t
                     </a>
 
-                    <a 
-                        href="#"
-                        class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-2xl hover:scale-110 transition"
-                    >
-                        ⬚
-                    </a>
-
                 </div>
 
             </div>

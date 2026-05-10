@@ -1,3 +1,13 @@
+<?php
+
+function limitText($text, $limit = 100)
+{
+    return strlen($text) > $limit
+        ? substr($text, 0, $limit) . '...'
+        : $text;
+}
+
+?>
 <div class="pt-16 md:pt-16">
 <section class="bg-[#F3EFE4] px-6 md:px-14 py-12 md:py-20 pt">
 
@@ -11,7 +21,7 @@
                 <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
                     Selamat Datang,
                     <br>
-                    segera bangun
+                    segera baca
                     <br>
                     <span class="text-orange-500">
                         blog
@@ -30,7 +40,7 @@
             <div class="flex justify-center lg:justify-start">
 
     <button class="bg-orange-500 hover:bg-orange-600 transition text-white font-semibold px-10 py-4 rounded-full text-lg">
-        Lihat Blog
+        <a href="/blog">Lihat Blog</a>
     </button>
 
 </div>
@@ -88,80 +98,38 @@
         <!-- Cards -->
         <div class="flex gap-8 overflow-x-auto pb-5 scrollbar-hide">
 
-            <!-- Card -->
-            <div class="min-w-[320px] md:min-w-[340px] bg-orange-500 rounded-3xl p-6 shadow-lg flex gap-5">
+            <div class="flex gap-8 overflow-x-auto pb-5 scrollbar-hide">
 
-                <img
-                    src="https://i.pravatar.cc/100?img=12"
-                    class="w-16 h-16 rounded-full object-cover"
-                    alt=""
-                >
+    <?php foreach (array_slice($posts, 0, 5) as $post): ?>
 
-                <div>
+        <a 
+            href="/blog/show?id=<?= $post['id'] ?>"
+            class="min-w-[320px] md:min-w-[340px] bg-orange-500 rounded-3xl p-6 shadow-lg flex gap-5 hover:scale-[1.02] transition"
+        >
 
-                    <h3 class="text-3xl text-white font-semibold mb-3">
-                        Mera Jainal
-                    </h3>
+            <img
+                src="<?= $post['image'] ?>"
+                class="w-20 h-20 rounded-2xl object-cover flex-shrink-0"
+                alt="<?= limitText($post['title'], 30) ?>"
+            >
 
-                    <p class="text-white/90 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed non risus. Suspendisse lectus tortor, dignissim sit
-                        amet, adipiscing nec, ultricies sed, dolor.
-                    </p>
+            <div>
 
-                </div>
+                <h3 class="text-2xl text-white font-semibold mb-3 leading-tight">
+                    <?= limitText($post['title'], 30) ?>
+                </h3>
 
-            </div>
-
-            <!-- Card -->
-            <div class="min-w-[320px] md:min-w-[340px] bg-orange-500 rounded-3xl p-6 shadow-lg flex gap-5">
-
-                <img
-                    src="https://i.pravatar.cc/100?img=30"
-                    class="w-16 h-16 rounded-full object-cover"
-                    alt=""
-                >
-
-                <div>
-
-                    <h3 class="text-3xl text-white font-semibold mb-3">
-                        Arma Loda
-                    </h3>
-
-                    <p class="text-white/90 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed non risus. Suspendisse lectus tortor, dignissim sit
-                        amet, adipiscing nec, ultricies sed, dolor.
-                    </p>
-
-                </div>
+                <p class="text-white/90 leading-relaxed text-sm">
+                    <?= limitText(strip_tags($post['content']), 100) ?>
+                </p>
 
             </div>
 
-            <!-- Card -->
-            <div class="min-w-[320px] md:min-w-[340px] bg-orange-500 rounded-3xl p-6 shadow-lg flex gap-5">
+        </a>
 
-                <img
-                    src="https://i.pravatar.cc/100?img=45"
-                    class="w-16 h-16 rounded-full object-cover"
-                    alt=""
-                >
+    <?php endforeach; ?>
 
-                <div>
-
-                    <h3 class="text-3xl text-white font-semibold mb-3">
-                        Rudi Alpha
-                    </h3>
-
-                    <p class="text-white/90 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed non risus. Suspendisse lectus tortor, dignissim sit
-                        amet, adipiscing nec, ultricies sed, dolor.
-                    </p>
-
-                </div>
-
-            </div>
+</div>
 
         </div>
 

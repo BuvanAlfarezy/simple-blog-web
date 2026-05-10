@@ -63,14 +63,14 @@
 >
 
     <a 
-        href="#"
+        href="/home"
         class="hover:text-orange-500 transition py-2"
     >
         Home
     </a>
 
     <a 
-        href="#"
+        href="/blog"
         class="hover:text-orange-500 transition py-2"
     >
         Blog
